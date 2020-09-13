@@ -1,6 +1,6 @@
 # Template HTTP Service
 ```python
-from flaskservice.base import Api, View
+from flaskservice import Api, View
 
 class ExampleView(View):
     # parameters of your flaskservice
@@ -17,7 +17,7 @@ class ExampleView(View):
 api = Api(__name__)
 api.add_view(ExampleView, urls="/example")
 
-api.runserver(host='127.0.0.1', debug=True)
+api.runserver(host='127.0.0.1', port=5000, debug=True)
 ```
 Server is running on default port 5000 if not changed.
 Send ``post`` or ``get`` and see result (:
