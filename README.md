@@ -1,9 +1,23 @@
-# Template HTTP Service
+# Flask Services
+![Tests](https://github.com/jlsneto/flaskservice/workflows/Python%20Tests/badge.svg)
+![Deploy PyPI](https://github.com/jlsneto/flaskservice/workflows/PyPi%Publish/badge.svg)
+[![PyPI version](https://badge.fury.io/py/flaskservice.svg)](https://badge.fury.io/py/flaskservice)
+
+## Get started
+Install with pip
+
+`pip install flaskservice`
+
+or
+
+`python -m pip install flaskservice`
+
+## Example Code
 ```python
-from service.base import Api, View
+from flaskservice import Api, View
 
 class ExampleView(View):
-    # parameters of your service
+    # parameters of your flaskservice
     name: str = "Joab Leite" # it is not required because it has a defined value
     height: float # Required
 
@@ -17,7 +31,7 @@ class ExampleView(View):
 api = Api(__name__)
 api.add_view(ExampleView, urls="/example")
 
-api.runserver(host='127.0.0.1', debug=True)
+api.runserver(host='127.0.0.1', port=5000, debug=True)
 ```
 Server is running on default port 5000 if not changed.
 Send ``post`` or ``get`` and see result (:
