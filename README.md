@@ -1,4 +1,18 @@
-# Template HTTP Service
+# Flask Services
+![Tests](https://github.com/jlsneto/flaskservice/workflows/Python%20Tests/badge.svg)
+![Deploy PyPI](https://github.com/jlsneto/flaskservice/workflows/PyPi%Publish/badge.svg)
+[![PyPI version](https://badge.fury.io/py/flaskservice.svg)](https://badge.fury.io/py/flaskservice)
+
+## Get started
+Install with pip
+
+`pip install flaskservice`
+
+or
+
+`python -m pip install flaskservice`
+
+## Example Code
 ```python
 from flaskservice import Api, View
 
