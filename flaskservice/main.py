@@ -1,4 +1,4 @@
-from service.base import Api, View
+from flaskservice.base import Api, View
 
 
 class ExampleView(View):

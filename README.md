@@ -1,9 +1,9 @@
 # Template HTTP Service
 ```python
-from service.base import Api, View
+from flaskservice.base import Api, View
 
 class ExampleView(View):
-    # parameters of your service
+    # parameters of your flaskservice
     name: str = "Joab Leite" # it is not required because it has a defined value
     height: float # Required
 
