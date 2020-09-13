@@ -15,11 +15,11 @@ logger = logging.getLogger(__name__)
 
 class View(Resource):
     """
-    Base Resource é a base de toda e qualquer end-point que venha a ser criado na api.
-    Nele são definidos os métodos HTTP disponíveis para implementação.
-    Os métodos são definidos para manipular cada solicitação HTTP, bem como a funcionalidade que será executada.
+    Base Resource is the base of any and all end-points that may be created in the api.
+    It defines the HTTP methods available for implementation.
+    The methods are defined to handle each HTTP request, as well as the functionality that will be executed.
 
-    Você deve implementar os métodos que deseja utilizar, para isso basta sobrescrever na implementação do seu serviço.
+    You must implement the methods you want to use, to do so just overwrite the implementation of your service.
     """
 
     def __init__(self, **kwargs):
