@@ -5,6 +5,9 @@ import flaskservice
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+with open("requirements.txt", "r") as fr:
+    REQUIRED_PACKAGES = fr.read().splitlines()
+
 EXCLUDE_FROM_PACKAGES = ()
 
 setuptools.setup(
@@ -23,4 +26,5 @@ setuptools.setup(
             "Operating System :: OS Independent",
         ],
         python_requires='>=3.6',
+        install_requires=REQUIRED_PACKAGES
 )
