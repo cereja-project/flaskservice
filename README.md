@@ -1,6 +1,6 @@
 # Flask Services
 ![Tests](https://github.com/jlsneto/flaskservice/workflows/Python%20Tests/badge.svg)
-![Deploy PyPI](https://github.com/jlsneto/flaskservice/workflows/PyPi%Publish/badge.svg)
+![PyPi Publish](https://github.com/jlsneto/flaskservice/workflows/PyPi%20Publish/badge.svg)
 [![PyPI version](https://badge.fury.io/py/flaskservice.svg)](https://badge.fury.io/py/flaskservice)
 
 ## Get started
