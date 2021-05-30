@@ -1,5 +1,5 @@
 import unittest
-from ..flaskservice import Api, View
+from flaskservice import Api, View
 from cereja import console
 
 
