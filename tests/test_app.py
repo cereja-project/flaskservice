@@ -1,5 +1,5 @@
 import unittest
-from flaskservice import Api, View
+from ..flaskservice import Api, View
 from cereja import console
 
 
@@ -23,5 +23,5 @@ class TestData(unittest.TestCase):
         for url in self.urls:
             msg = f"""endpoint ({url}). Expected 200 'OK'"""
             res = self.client().post(url, data={'name': 'john', 'other_param': 'test'})
-            console.log(repr(res.json))
+            console.log(str(res.json))
             self.assertEqual(200, res.status_code, msg)

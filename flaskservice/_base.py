@@ -12,6 +12,8 @@ from flask_restful import Api as _Api
 
 logger = logging.getLogger(__name__)
 
+__all__ = ['View', 'Api']
+
 
 class View(Resource):
     """

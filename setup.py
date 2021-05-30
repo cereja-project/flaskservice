@@ -1,6 +1,15 @@
-import setuptools
+import sys
 
-import flaskservice
+import setuptools
+import subprocess
+
+cmd_ = " ".join(
+        [f"{sys.executable}", "-m", "pip", "install", 'cereja']
+)
+
+subprocess.run(cmd_, shell=True, stdout=subprocess.PIPE).check_returncode()
+
+from flaskservice import __version__
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -8,11 +17,11 @@ with open("README.md", "r") as fh:
 with open("requirements.txt", "r") as fr:
     REQUIRED_PACKAGES = fr.read().splitlines()
 
-EXCLUDE_FROM_PACKAGES = ()
+EXCLUDE_FROM_PACKAGES = ('flaskservice.tests',)
 
 setuptools.setup(
         name="flaskservice",
-        version=flaskservice.__version__,
+        version=__version__,
         author="Joab Leite",
         author_email="jlsn1@ifal.edu.br",
         description="Quick start web services",
